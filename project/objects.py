@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import (QMainWindow, QLabel, QDoubleSpinBox, QPushButton, QTableWidget)
+from PyQt6.QtWidgets import (QMainWindow, QLabel, QDoubleSpinBox, QPushButton)
 
 # window
 window = QMainWindow()
@@ -29,7 +29,6 @@ eur_l = QLabel(window)
 eur_sb = QDoubleSpinBox(window)
 eur_sb.setValue(79.46)
 
-
 param = {usd_l: usd_sb, eur_l: eur_sb}
 text = ["Usd", "Eur"]
 i = 1
@@ -48,4 +47,3 @@ close_btn.move(130, 150)
 close_btn.setText("Close")
 
 window.show()
-

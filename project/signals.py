@@ -21,6 +21,7 @@ def check_state():
 
 def start():
     global usd, eur, plt, sensor
+
     sensor = True
     usd = usd_sb.value()
     eur = eur_sb.value()
@@ -68,6 +69,7 @@ def draw():
 
 def stop():
     global count, sensor, time
+
     time.stop()
     time.deleteLater()
     count = 0
